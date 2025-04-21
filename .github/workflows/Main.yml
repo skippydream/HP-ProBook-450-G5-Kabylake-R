@@ -48,7 +48,7 @@ jobs:
          repo_token: ${{ secrets.GITHUB_TOKEN }}
          file: ./*.zip
          tag: ${{ github.ref }}
-         release_name: EFI DellXPS9730 Hackintosh
+         release_name: EFI HP-ProBook-450-G5-Kabylake-R Hackintosh
          body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
          file_glob: true
-         overwrite: true
+         overwrite: false
