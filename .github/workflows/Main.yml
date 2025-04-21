@@ -1,0 +1,54 @@
+name: Builds Artifact and Release
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+env:
+  PROJECT_TYPE: EFI
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    env:
+      JOB_TYPE: BUILD
+
+    steps:
+    - uses: actions/checkout@v4.2.2
+
+    - name: Zip EFI
+      run: |
+        rm -Rf Bios V 1.26 SysReport
+        rm -Rf .gitignore
+        rm -Rf "HP Probook 450 G5 Kabylake -R.ioreg"
+        rm -Rf README.md
+        rm -Rf ".github"
+        rm -Rf ".git"
+        rm -Rf "opencore-Bios 1.26.txt"        
+        rm -Rf I2C-PATCH        
+
+        zip -r HP-ProBook-450-G5-Kabylake-R.zip .
+        
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4.6.2
+      with:
+        name: HP-ProBook-450-G5-Kabylake-R
+        path: HP-ProBook-450-G5-Kabylake-R.zip
+        
+    - name: Upload build
+      uses: svenstaro/upload-release-action@2.9.0
+      if: github.event_name != 'pull_request'
+      with:
+         repo_token: ${{ secrets.GITHUB_TOKEN }}
+         file: ./*.zip
+         tag: ${{ github.ref }}
+         release_name: EFI DellXPS9730 Hackintosh
+         body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
+         file_glob: true
+         overwrite: true
