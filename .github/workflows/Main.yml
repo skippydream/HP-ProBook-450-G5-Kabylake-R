@@ -24,7 +24,7 @@ jobs:
 
     - name: Zip EFI
       run: |
-        rm -Rf Bios V 1.26 SysReport
+        rm -Rf "Bios V 1.26 SysReport"
         rm -Rf .gitignore
         rm -Rf "HP Probook 450 G5 Kabylake -R.ioreg"
         rm -Rf README.md
