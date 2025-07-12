@@ -42,7 +42,7 @@ jobs:
         path: HP-ProBook-450-G5-Kabylake-R.zip
         
     - name: Upload build
-      uses: svenstaro/upload-release-action@2.9.0
+      uses: svenstaro/upload-release-action@2.11.2
       if: github.event_name != 'pull_request'
       with:
          repo_token: ${{ secrets.GITHUB_TOKEN }}
