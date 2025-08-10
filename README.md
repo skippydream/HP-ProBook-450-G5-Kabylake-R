@@ -1,6 +1,9 @@
 # HP ProBook 450 G5
 
-OpenCore setup for running Hackintosh on HP ProBook 450 G5
+OpenCore setup for running Hackintosh on HP ProBook 450 G5  
+  
+Please note that the config.plist is not ready as the SMBIOS part needs to be different for each hack.  
+You can use this tool: https://github.com/corpnewt/GenSMBIOS
 
 ### Laptop Specifications:
 - Intel i7-8550U (8) @ 1.80GHz CPU 
