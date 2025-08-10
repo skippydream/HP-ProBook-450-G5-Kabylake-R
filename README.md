@@ -1,6 +1,3 @@
-[![](https://img.shields.io/badge/Reposity-Baio77-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Baio1977?tab=repositories)
-[![](https://img.shields.io/badge/Telegram-HackintoshLifeIT-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLife_it)
-
 # HP ProBook 450 G5
 
 OpenCore setup for running Hackintosh on HP ProBook 450 G5
