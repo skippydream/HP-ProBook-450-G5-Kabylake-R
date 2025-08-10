@@ -17,7 +17,7 @@ OpenCore setup for running Hackintosh on HP ProBook 450 G5
 - SD Card Reader
 
 
-### BIOS V 1.26 Setup:
+### BIOS V 1.31 Setup:
 - Enable Embedded LAN Controller
 - Disable Fast Boot
 - Disable Power On when AC Detected
