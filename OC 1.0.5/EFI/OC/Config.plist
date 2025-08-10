@@ -978,7 +978,7 @@
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>YNnHP6K8</data>
+			<data>ADD-YOURS</data>
 			<key>SpoofVendor</key>
 			<false/>
 			<key>SystemMemoryStatus</key>
@@ -986,9 +986,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02D1WYQJHCC</string>
+			<string>ADD-YOURS</string>
 			<key>SystemUUID</key>
-			<string>57664082-5D5F-4E3D-8227-A43A1148A69E</string>
+			<string>ADD-YOURS</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
